@@ -33,7 +33,8 @@ This repository showcases my projects, skills, and certifications as I start my 
 - Business Plan Development – Harvard Manage Mentor  
 - Data Analytics – Simplilearn  
 - Presentation Skills – Harvard Manage Mentor  
-- Data Visualization with Tableau – Coursera  
+- Data Visualization with Tableau – Coursera
+  
 
 ---
 
