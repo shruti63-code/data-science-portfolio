@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Scientist Fresher Portfolio</title>
+  <style>
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #eef2ff);
+      color: #333;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+    header .btn {
+      margin-top: 20px;
+      background: #fff;
+      color: #dd2476;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    header .btn:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #dd2476;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ff512f; }
+
+    /* Section Styling */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Cards with Glass Effect */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      color: #ff512f;
+      margin-bottom: 10px;
+    }
+
+    /* Stats */
+    .stat h3 {
+      font-size: 2rem;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Contact Form */
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      background: #f3f3f3;
+    }
+    form button {
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    form button:hover { opacity: 0.9; }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, #dd2476, #ff512f);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Dark Mode */
+    .dark-mode {
+      background: #121212;
+      color: #f5f5f5;
+    }
+    .dark-mode nav { background: #1e1e1e; }
+    .dark-mode .card { background: rgba(30,30,30,0.8); color: #f5f5f5; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>👩‍💻 Shruti Sharma</h1>
+    <p style="font-family: 'Brush Script MT', cursive; font-weight: bold;">
+    <p>Aspiring Data Scientist | Python | Machine Learning | SQL</p>
+    <button class="btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    <br><br>
+    <a href="c:\Users\dell\Downloads\Blue Simple Professional CV Resume.pdf" class="btn" download>📄 Download Resume</a>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; font-size:1.1rem;">
+     <style>
+     body {
+      background: #fff;
+      color: #222;
+      padding: 30px;
+      font-family: "Dancing Script", cursive;
+      font-size: 20px; /* Dancing Script looks better slightly larger */
+      line-height: 1.7;
+      max-width: 760px;
+      margin: 40px auto;
+    }
+    .landscape-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .profile-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #2a4d8f;
+      text-align: center;
+    }
+    .profile {
+      background: #fafafa;
+      padding: 24px 28px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <div class="profile-title">Shruti Sharma — Aspiring Data Scientist</div>
+
+    Hii, I am enthusiastic and motivated aspiring Data Scientist with a solid foundation in data analytics, statistics, and programming. As a recent learner, I blend curiosity with disciplined study to translate data into clear insights. I have completed structured courses in data analytics, gaining hands-on experience with Python (pandas, NumPy, scikit-learn), SQL, Excel, and visualization tools such as Tableau and Power BI. I enjoy the full data workflow: sourcing and cleaning data, exploratory analysis, feature engineering, modeling, and communicating results through compelling visualizations.
+
+    During training projects, I analyzed real-world datasets to solve problems like customer segmentation, sales forecasting, and exploratory insights. These projects sharpened her skills in regression, classification, clustering, and model evaluation, and strengthened her ability to present findings to nontechnical stakeholders. I take pride in writing clean, reproducible code and documenting experiments thoughtfully.
+
+    I thrives in collaborative environments and values feedback, mentorship, and continuous learning. I am adaptable, detail-oriented, and approaches problems methodically, breaking them down into manageable steps and testing hypotheses rigorously. Beyond technical tools, I emphasizes critical thinking and domain awareness to ensure that models are useful, ethical, and aligned with business goals.
+
+    MY short-term goal is to contribute to data-driven teams where I can apply my analytical skills and grow under experienced practitioners. Long-term, she aims to specialize in machine learning and applied AI to build impactful solutions in healthcare, finance, or sustainability. I am excited to take on internship or entry-level roles where she can deliver value, learn quickly, and help organizations make smarter decisions using data.
+
+    I complements her technical abilities with strong communication, curiosity, and a growth mindset, and I am ready to contribute immediately while continuing to upskill through projects, online courses, and community collaborations. 
+ </p>
+  </section>
+
+  <!-- Skills -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background: #f9f9fc;
+      margin: 0;
+      padding: 40px;
+      color: #222;
+    }
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #2a4d8f;
+    }
+    .skills-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .skill-card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .skill-card:hover {
+      transform: translateY(-4px);
+    }
+    .skill-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #333;
+    }
+    .progress-bar {
+      background: #e5e7eb;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 10px;
+      margin: 10px 0 18px;
+    }
+    .progress {
+      height: 100%;
+      border-radius: 8px;
+    }
+    .python { width: 85%; background: #3776ab; }
+    .sql { width: 75%; background: #f29111; }
+    .excel { width: 80%; background: #217346; }
+    .tableau { width: 70%; background: #e97627; }
+    .ml { width: 65%; background: #6c63ff; }
+    .stats { width: 70%; background: #008080; }
+    .soft { width: 90%; background: #ffb400; }
+  </style>
+</head>
+<body>
+
+  <h2>💻 Skills</h2>
+
+  <div class="skills-section">
+    <!-- Programming -->
+    <div class="skill-card">
+      <div class="skill-title"><i class="fa-solid fa-code"></i> Programming & Tools</div>
+      <div>Python (NumPy, Pandas, Scikit-learn)</div>
+      <div class="progress-bar"><div class="progress python"></div></div>
+      <div>SQL (Joins, Queries, Aggregations)</div>
+      <div class="progress-bar"><div class="progress sql"></div></div>
+      <div>Excel (Pivot Tables, Data Cleaning)</div>
+      <div class="progress-bar"><div class="progress excel"></div></div>
+      <div>Tableau / Power BI (Dashboards)</div>
+      <div class="progress-bar"><div class="progress tableau"></div></div>
+    </div>
+
+    <!-- Data Analytics -->
+    <div class="skill-card">
+      <div class="skill-title"><i class="fa-solid fa-chart-line"></i> Data Analytics & Science</div>
+      <div>Exploratory Data Analysis (EDA)</div>
+      <div class="progress-bar"><div class="progress ml"></div></div>
+      <div>Machine Learning (Regression, Classification)</div>
+      <div class="progress-bar"><div class="progress stats"></div></div>
+      <div>Data Visualization & Storytelling</div>
+      <div class="progress-bar"><div class="progress tableau"></div></div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skill-card">
+      <div class="skill-title"><i class="fa-solid fa-people-group"></i> Soft Skills</div>
+      <div>Problem-Solving & Analytical Thinking</div>
+      <div class="progress-bar"><div class="progress soft"></div></div>
+      <div>Communication & Data Storytelling</div>
+      <div class="progress-bar"><div class="progress soft"></div></div>
+      <div>Team Collaboration</div>
+      <div class="progress-bar"><div class="progress soft"></div></div>
+      <div>Adaptability & Continuous Learning</div>
+      <div class="progress-bar"><div class="progress soft"></div></div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📊 Student Performance Prediction</h3>
+        <p>ML model predicting student scores with 85% accuracy.</p>
+        <a href="#">🔗 GitHub Link</a>
+      </div>
+      <div class="card">
+        <h3>📈 Sales Dashboard</h3>
+        <p>Interactive dashboard in Python/Excel to track KPIs.</p>
+        <a href="#">🔗 GitHub Link</a>
+      </div>
+      <div class="card">
+        <h3>🤖 Sentiment Analysis</h3>
+        <p>NLP on tweets to classify sentiment using ML models.</p>
+        <a href="#">🔗 GitHub Link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <!-- Certifications Section -->
+<section>
+  <h2>Certifications</h2>
+  <div class="certifications">
+    
+    <div class="cert-card">
+<style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Optional: controls image size */
+  }
+</style>
+<img src="c:\Users\dell\Downloads\5,6.jpeg" alt="cert" alt="Centered Image"class="center">
+      <h3>Introduction to Data Science in Python</h3>
+      <p>Simplilearn – Learned Python basics, NumPy, Pandas, and data handling techniques.</p>
+    </div>
+
+    <div class="cert-card">
+<style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Optional: controls image size */
+  }
+</style>
+<img src="c:\Users\dell\Downloads\2,3.webp" alt="cert" alt="Centered Image"class="center">
+         <h3>Introduction to Applied Data Science with Python</h3>
+      <p>Simplilearn – Practical introduction to ML algorithms, visualization, and applied projects.</p>
+    </div>
+
+    <div class="cert-card">
+     <style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Optional: controls image size */
+  }
+</style>
+<img src="c:\Users\dell\Downloads\6,7.webp" alt="harvard" alt="Centered Image"class="center">
+      <h3>Business Plan Development</h3>
+      <p>Harvard Manage Mentor – Developed strategic business planning & problem-solving skills.</p>
+    </div>
+
+    <div class="cert-card">
+   <style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Optional: controls image size */
+  }
+</style>
+<img src="c:\Users\dell\Downloads\ChatGPT Image Sep 9, 2025, 08_27_09 PM.png" alt="cert" alt="Centered Image"class="center">
+      <h3>Introduction to Data Analytics</h3>
+      <p>Simplilearn – Gained knowledge of analytics, SQL, and business insights from data.</p>
+    </div>
+
+   
+      
+    <div class="cert-card">
+   <style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Optional: controls image size */
+  }
+</style>
+      <img src="c:\Users\dell\Downloads\7,8.webp" alt="presentation"alt="Centered Image"class="center">
+      <h3>Presentation Skills</h3>
+      <p>Harvard Manage Mentor – Improved professional presentation and communication skills.</p>
+    </div>
+
+    <div class="cert-card">
+      <style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Optional: controls image size */
+  }
+</style>
+   
+      <img src="c:\Users\dell\OneDrive\Pictures\certificate for Data.png" alt="tableau"alt="Centered Image"class="center">
+      <h3>Introduction to Data Visualization with Tableau</h3>
+      <p>Coursera – Built dashboards and interactive visualizations using Tableau.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <section>
+      <h2>Contact Me</h2>
+      <form action="mailto:devgansrishti78@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+     <p style="text-align:center; margin-top:20px;">
+      📧 devgansrishti78@gmail.com 
+      <p>📬 Connect with me:</p>
+      <a href="https://www.linkedin.com/in/shruti-sharma13/" target="_blank">GitHub Profile</a> | 
+      <a href="https://github.com/shruti63-code" target="_blank">LinkedIn Profile</a>  
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 its shruti... | Data Science Portfolio</p>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
