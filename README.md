@@ -1,4 +1,4 @@
-# data-science-portfolio
+# Data-science-portfolio
 # 🌐 Data Science Portfolio – Shruti Sharma
 
 Welcome to my Data Science Portfolio!  
